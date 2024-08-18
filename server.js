@@ -20,8 +20,8 @@ app.get('/genHtml.html', (req, res) => {
 })
 
 // запускаем сервер на порту 8080
-app.listen(3005);
+app.listen(8080);
 // отправляем сообщение
-console.log('Сервер стартовал! http://localhost:3005');
+console.log('Сервер стартовал! http://localhost:8080');
 
 module.exports = app;
