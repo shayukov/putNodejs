@@ -1,0 +1,15 @@
+body {
+    background-color: burlywood;
+    font-size: x-large;
+}
+#text {
+    background-color: antiquewhite;
+    /* max-width: 381px; */
+    padding: 10px;
+}
+#flex-box {
+    display: flex;
+}
+#time {
+    padding: 10px;
+}

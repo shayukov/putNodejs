@@ -1,0 +1,128 @@
+html {
+  background-image: linear-gradient(50deg,rgba(0,0,0,0.1),rgba(0,0,0,0.7)), url(../img/photo_2022-11-20_15-32-43.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 30px 15px;
+}
+h1 {
+  color:  #6166bf;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  color: #fff;
+}
+input, button {
+  border-radius: 10px;
+  height: 25px;
+  font-size: 16px;
+}
+.conteiner{
+  display: flex;
+}
+<<<<<<< HEAD:static/css/style.css
+label{
+  color:  #e3f0f3;
+  font-size: 25px;
+  
+=======
+#put{
+  margin-right: 30px;
+  border-right: #ebeff0;
+}
+.put{
+  color: #0a0a5d;
+  font-size: 20px;
+}
+label{
+  color:  #ebeff0;
+  font-size: 15px; 
+>>>>>>> 95e0a54ce3811353e62f0b31d28f029bcf292b72:css/style.css
+}
+.drive {
+  background-color: green;
+  color: #fff;
+  width: 135px;
+  height: 45px;
+  font-size: 15px;
+}
+.adress{
+  border-radius: 10px;
+  height: 31px;
+  font-size: 16px;
+  width: 202px;
+}
+#friday2.refTime{
+  width: 25px;
+  height: 25px;
+}
+<<<<<<< HEAD:static/css/style.css
+#adressText{
+  margin-right: 30px;
+  border-right: #ebeff0;
+}
+.text{
+  color: #ebeff0;
+  font-size: 20px;
+}
+
+/* .refTime{
+  display: flex;
+=======
+#ch-fss.refTime {
+  width: 25px;
+  height: 25px;
+}
+.check_fss {
+  margin-bottom: 20px;
+}
+dialog {
+  background-color: rgb(199, 197, 197);
+  border: none;
+}
+#button {
+  padding: 6px;
+  background-color: rgb(184, 5, 5);
+  border: none;
+>>>>>>> 95e0a54ce3811353e62f0b31d28f029bcf292b72:css/style.css
+  color: #fff;
+  cursor: pointer;
+}
+#myDialog::backdrop {
+  background-color: gray;
+  opacity: 0.6;
+}
+
+@media screen and (max-width:1200px) {
+
+}
+/* 768 - 992 */
+@media screen and (max-width:992px) {
+
+}
+/* 576 - 768 */
+@media screen and (max-width:768px) {
+
+}
+/* 0 - 576 */
+@media screen and (max-width:576px) {
+  .form p{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:320px) {
+  .form p{
+    font-size: 16px;
+  }
+}
