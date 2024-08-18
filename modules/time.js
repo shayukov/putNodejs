@@ -298,10 +298,6 @@ function timeData() {
       arrMinute.splice(r,1,arrMinute[r] + msToTime(sumMinute) + '<br><br>')
       sumMinute += waitMl
     }
-    //===============================================================================
-<<<<<<< HEAD
-=======
-
     // после обеда
     //==============================================================================
     sumMinute = endLunchMl
@@ -318,105 +314,6 @@ function timeData() {
     difference2 = endOfTheDayMl - sumM
     difference = Math.floor((difference2/arrStrongKmLength)/3)
 
-    for (r; r < arrStrongKm.length; r++) {
-      m = pathToTime(arrStrongKm,r)
-      arrMinute.push(msToTime(sumMinute) + '-')
-      sumMinute += m + difference
-      arrMinute.splice(r,1,arrMinute[r] + msToTime(sumMinute) + '<br>')
-      sumMinute += waitMl + difference
-      arrMinute.splice(r,1,arrMinute[r] + msToTime(sumMinute) + '-')
-      sumMinute += m + difference 
-      arrMinute.splice(r,1,arrMinute[r] + msToTime(sumMinute) + '<br><br>')
-      sumMinute += waitMl
-    }
-  } else {
-    // если заправка есть
-    // до обеда
-    //========================================================================
-    //========================================================================
-
-    let sM = sumMinute,
-        z = 0;
-
-    //установка заправки на своё место в списке
-    for (let i = 1; i < arrStrongKm.length; i++) {
-      let sM2 = sM
-      m = pathToTime(arrStrongKm,i)
-      sM += m
-      sM += waitMl
-      sM += m
-      sM += waitMl
-      if(sM < zTimeStart) {
-        kmSplice = arrStrongKm.splice(i,1)
-        arrStrongKm.splice(0,0,kmSplice[0])
-        adressSplice = arrStrongAdress.splice(i,1)
-        arrStrongAdress.splice(0,0,adressSplice[0])
-        z++
-      }else {
-        sM = sM2
-        continue
-      }
-    }
-    //==============================================================================
-    for(r; r < z; r++) {
-      m = pathToTime(arrStrongKm,r)
-      arrMinute.push(msToTime(sumMinute) + '-')
-      sumMinute += m
-      arrMinute.splice(r,1,arrMinute[r] + msToTime(sumMinute) + '<br>')
-      sumMinute += waitMl
-      arrMinute.splice(r,1,arrMinute[r] + msToTime(sumMinute) + '-')
-      sumMinute += m 
-      arrMinute.splice(r,1,arrMinute[r] + msToTime(sumMinute) + '<br><br>')
-      sumMinute += waitMl
-    }
-    m = pathToTime(arrStrongKm,r)
-    arrMinute.push(msToTime(sumMinute) + '-')
-    sumMinute += m
-    arrMinute.splice(r,1,arrMinute[r] + msToTime(sumMinute) + '<br>')
-    sumMinute = zTimeEnd 
-    arrMinute.splice(r,1,arrMinute[r] + msToTime(sumMinute) + '-')
-    sumMinute += m
-    arrMinute.splice(r,1,arrMinute[r] + msToTime(sumMinute) + '<br><br>')
-    sumMinute += waitMl
-    r++
-
-    // let u = r
-    sumM = sumMinute
-    // arrStrongKmSplice = [];
-    // arrStrongAdressSplice = [];
-
-    difference2 = startLunchMl - sumM
-    try{
-      difference = Math.floor((difference2/(arrStrongKmLength-r))/3)
-    }catch(err) {
-      m = pathToTime(arrStrongKm,r)
-      arrMinute.push(msToTime(sumMinute) + '-')
-      sumMinute += m
-      arrMinute.splice(r,1,arrMinute[r] + msToTime(sumMinute) + '<br>')
-      sumMinute = zTimeEnd 
-      arrMinute.splice(r,1,arrMinute[r] + msToTime(sumMinute) + '-')
-      sumMinute += m
-      arrMinute.splice(r,1,arrMinute[r] + msToTime(sumMinute) + '<br><br>')
-      sumMinute += waitMl
-      r++
->>>>>>> a944a4529f83307c2af5572114a0ec26c2950425
-  
-    // после обеда
-    //==============================================================================
-    sumMinute = endLunchMl
-    sumM = endLunchMl
-    arrStrongKmLength = arrStrongKm.length - arrStrongKmLength
-    let i = r
-    for (i ; i < arrStrongKm.length; i++) {
-      m = pathToTime(arrStrongKm,i)
-      sumM += m
-      sumM += waitMl
-      sumM += m
-      sumM += waitMl
-    }
-    difference2 = endOfTheDayMl - sumM
-    difference = Math.floor((difference2/arrStrongKmLength)/3)
-  
     for (r; r < arrStrongKm.length; r++) {
       m = pathToTime(arrStrongKm,r)
       arrMinute.push(msToTime(sumMinute) + '-')
@@ -440,10 +337,4 @@ function timeData() {
   return generatorHtml(root, arr)
 }
 
-<<<<<<< HEAD
-
 module.exports.timeData = timeData;
-=======
-module.exports.timeData = timeData;
-// module.exports.arrStrongAdress = arrStrongAdress;
->>>>>>> a944a4529f83307c2af5572114a0ec26c2950425

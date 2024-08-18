@@ -1,7 +1,5 @@
 const fs = require('fs');
-const parse = require('node-html-parser').parse;
 const servText = require('../server');
-const { error } = require('console');
 
 const adressArr = fs.readFileSync('adress.txt').toString().split('\r\n');
 const adressArrKmPlus = fs.readFileSync('adress_kmPlus.txt').toString().split('\r\n');
@@ -159,4 +157,3 @@ function textData() {
 module.exports.textData = textData;
 module.exports.arrStrongKm = arrStrongKm;
 module.exports.arrStrongAdress = arrStrongAdress;
-// module.exports.friday = textData.friday;
