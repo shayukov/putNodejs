@@ -23,6 +23,6 @@ app.get('/genHtml.html', (req, res) => {
 app.listen(8080)
 
 // отправляем сообщение
-console.log('Сервер стартовал! http://localhost: 8080');
+console.log('Сервер стартовал! http://localhost:8080');
 
 module.exports = app;
