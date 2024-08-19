@@ -9,9 +9,6 @@
   },
   "author": "",
   "license": "ISC",
-  "engines": {
-    "node": "20.11.0"
-  },
   "dependencies": {
     "express": "^4.19.2" 
   },
