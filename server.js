@@ -4,7 +4,7 @@ const express = require('express'),
 
 // создаём Express-приложение
 const app = express();
-
+const port = process.env.PORT || 4000;
 // подключаем статические файлы css, и другие
 app.use(express.static('static'))
 
@@ -19,9 +19,11 @@ app.get('/genHtml.html', (req, res) => {
   )
 })
 
-// запускаем сервер на порту 8080
-app.listen(8080);
-// отправляем сообщение
-console.log('Сервер стартовал! http://localhost:8080');
+// запускаем сервер на порту 4000
+app.listen(port, () => {
+  // отправляем сообщение
+  console.log(`Сервер стартовал! http://localhost: ${port}`);
+});
+
 
 module.exports = app;
